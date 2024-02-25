@@ -15,6 +15,7 @@ Before you begin, ensure you have Python 3.x installed on your system. Here are 
 git clone https://github.com/MexSecDevelopments/4yeD0rK.git
 cd 4yeD0rK
 pip install -r requirements.txt
+```
 
 # Usage
 To start using 4yeD0rK, run the following command from the terminal:
