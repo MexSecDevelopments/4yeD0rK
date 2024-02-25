@@ -12,7 +12,7 @@ Installation
 Provide detailed instructions on how the user can set up their environment and install 4yeD0rK. This might include prerequisites, dependencies, and step-by-step installation commands.
 
 # Installation steps
-1. $ git clone https://your-repository-link/4yeD0rK.git
+1. $ git clone https://github.com/MexSecDevelopments/4yeD0rK.git
 2. $ cd 4yeD0rK
 3. $ pip install -r requirements.txt
 
