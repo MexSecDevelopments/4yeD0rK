@@ -12,12 +12,12 @@ Installation
 Provide detailed instructions on how the user can set up their environment and install 4yeD0rK. This might include prerequisites, dependencies, and step-by-step installation commands.
 
 # Installation steps
-$ git clone https://your-repository-link/4yeD0rK.git
-$ cd 4yeD0rK
-$ pip install -r requirements.txt
+1. $ git clone https://your-repository-link/4yeD0rK.git
+2. $ cd 4yeD0rK
+3. $ pip install -r requirements.txt
 
-Usage
-Describe how users can run the tool, including the command-line syntax and any parameters they can use. 
+# Usage
+
 $ python 4yeD0rK.py
 
 # Contribution
