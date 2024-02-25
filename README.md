@@ -21,7 +21,7 @@ Provide detailed instructions on how the user can set up their environment and i
 $ python 4yeD0rK.py
 
 # Contribution
-Encourage users to contribute and guide them on how they can submit their contributions. Provide links to issues, discussions, and pull request guidelines.
+
 
 # License
 
