@@ -19,7 +19,9 @@ pip install -r requirements.txt
 
 # Usage
 To start using 4yeD0rK, run the following command from the terminal:
+```bash
 python bin/main.py
+```
 
 Follow the on-screen instructions to select your dorking category, mode, and target domain.
 
