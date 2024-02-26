@@ -3,8 +3,12 @@ from rich.markdown import Markdown
 from modulos.generador_dorks import generate_dorks_for_category
 from modulos.gestion_resultados import show_results_with_style
 from modulos.seleccion_categoria import select_category
+<<<<<<< HEAD
 from modulos.utilidades import limpiar_consola, validar_entrada
 from modulos.gestion_api import google_search  # Asegúrate de haber implementado esta función correctamente
+=======
+from modulos.utilidades import limpiar_consola, validar_entrada  # Importación del módulo de utilidades
+>>>>>>> add67d01907cbbb659c156c6e63284cb57fc99e5
 
 # Creando un objeto de consola para una salida rica
 console = Console()
