@@ -1,18 +1,17 @@
-import requests
-from rich import print as rprint
 from rich.console import Console
 from rich.markdown import Markdown
-from Modulos.generador_dorks import generate_dorks_for_category
-from Modulos.gestion_resultados import show_results_with_style
-from Modulos.seleccion_categoria import select_category
-from Modulos.utilidades import limpiar_consola, validar_entrada  # Importación del módulo de utilidades
+from modulos.generador_dorks import generate_dorks_for_category
+from modulos.gestion_resultados import show_results_with_style
+from modulos.seleccion_categoria import select_category
+from modulos.utilidades import limpiar_consola, validar_entrada
+from modulos.gestion_api import google_search  # Asegúrate de haber implementado esta función correctamente
 
 # Creando un objeto de consola para una salida rica
 console = Console()
 
 # Configuración inicial
-API_KEY = ""  # Reemplaza con tu clave de API
-CSE_ID = ""  # Reemplaza con tu ID de motor de búsqueda personalizado
+API_KEY = "tu_clave_de_api"  # Reemplaza con tu clave de API
+CSE_ID = "tu_id_de_motor_de_búsqueda_personalizado"  # Reemplaza con tu ID de motor de búsqueda personalizado
 
 if __name__ == "__main__":
     try:
@@ -33,7 +32,7 @@ if __name__ == "__main__":
             selected_dorks = generate_dorks_for_category(selected_category, DOMAIN, mode)
             for dork in selected_dorks:
                 console.print(f"[bold cyan]Buscando:[/bold cyan] [italic]{dork}[/italic]")
-                results = google_search(dork)
+                results = google_search(dork, API_KEY, CSE_ID)  # Ajustado para pasar las claves como argumentos
                 show_results_with_style(results, dork)
 
             console.print("[green]Escaneo finalizado.[/green]")
@@ -46,10 +45,14 @@ if __name__ == "__main__":
                 selected_dorks = generate_dorks_for_category(selected_category, DOMAIN, mode)
                 for dork in selected_dorks:
                     console.print(f"[bold cyan]Buscando:[/bold cyan] [italic]{dork}[/italic]")
-                    results = google_search(dork)
+                    results = google_search(dork, API_KEY, CSE_ID)
                     show_results_with_style(results, dork)
+                continue  # Asegura que el bucle continúe si se elige incrementar el nivel
+
+            break  # Salir del bucle si la opción no es continuar
 
     except KeyboardInterrupt:
         console.print("\n[bold red]Escaneo interrumpido, abortando...[/bold red]")
+
 
 
