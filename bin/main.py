@@ -2,10 +2,10 @@ import requests
 from rich import print as rprint
 from rich.console import Console
 from rich.markdown import Markdown
-from Modulos.generador_dorks import generate_dorks_for_category
-from Modulos.gestion_resultados import show_results_with_style
-from Modulos.seleccion_categoria import select_category
-from Modulos.utilidades import limpiar_consola, validar_entrada  # Importación del módulo de utilidades
+from modulos.generador_dorks import generate_dorks_for_category
+from modulos.gestion_resultados import show_results_with_style
+from modulos.seleccion_categoria import select_category
+from modulos.utilidades import limpiar_consola, validar_entrada  # Importación del módulo de utilidades
 
 # Creando un objeto de consola para una salida rica
 console = Console()
